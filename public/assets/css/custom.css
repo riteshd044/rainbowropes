@@ -6126,6 +6126,10 @@ header.premium-header .header-btn .btn-highlighted:hover {
     padding-bottom: 30px;
   }
 
+  .what-we-do {
+    margin-bottom: 20px;
+  }
+
   .what-we-do-content {
     padding: 80px 40px;
   }
@@ -7525,8 +7529,6 @@ header.premium-header .header-btn .btn-highlighted:hover {
     background-color: var(--secondary-color);
     color: inherit;
   }
-
-
 
   .why-choose-item {
     width: 100%;
