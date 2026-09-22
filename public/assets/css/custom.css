@@ -339,6 +339,15 @@ a:focus {
   background: var(--accent-color);
 }
 
+@media (max-width: 991px), (hover: none), (pointer: coarse) {
+  .cb-cursor {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -972,7 +981,7 @@ header.premium-header .header-btn .btn-highlighted:hover {
 }
 
 .hero-brand-mark {
-  width: 56px;
+  width: 80px;
   height: 34px;
   object-fit: cover;
   border-radius: 10px;
@@ -1909,12 +1918,6 @@ header.premium-header .header-btn .btn-highlighted:hover {
   padding: 14px 14px 14px 40px;
 }
 
-.why-choose-us-body ul li:nth-child(4n - 2),
-.why-choose-us-body ul li:nth-child(4n - 1) {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-}
-
 .why-choose-us-body ul li::before {
   content: "\f058";
   position: absolute;
@@ -1944,8 +1947,8 @@ header.premium-header .header-btn .btn-highlighted:hover {
   padding: 40px;
 }
 
-.why-choose-item:nth-child(4n - 3),
-.why-choose-item:nth-child(4n) {
+.why-choose-item:nth-child(n),
+.why-choose-item:nth-child(n) {
   background: var(--primary-color);
 }
 
@@ -1995,8 +1998,8 @@ header.premium-header .header-btn .btn-highlighted:hover {
 
 .why-choose-us-image figure {
   display: block;
-  mask-image: url("../images/why-choose-us-img-mask.svg");
-  background-image: url("../images/why-choose-us-img-mask.svg");
+  /* mask-image: url("../images/why-choose-us-img-mask.svg"); */
+  /* background-image: url("../images/why-choose-us-img-mask.svg"); */
   mask-size: auto 100%;
   mask-position: center center;
   mask-repeat: no-repeat;
@@ -7523,10 +7526,7 @@ header.premium-header .header-btn .btn-highlighted:hover {
     color: inherit;
   }
 
-  .why-choose-us-body ul li:nth-child(even) {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-  }
+
 
   .why-choose-item {
     width: 100%;
