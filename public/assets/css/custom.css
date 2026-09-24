@@ -3495,7 +3495,7 @@ header.premium-header .header-btn .btn-highlighted:hover {
 }
 
 .approach-counter-item {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
