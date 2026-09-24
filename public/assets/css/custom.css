@@ -1,9 +1,3 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Linex - Textile & Fabric Manufacturing HTML Template
-* File          : CSS File
-* Version       : 1.0
-* ---------------------------------------------------------------------------------------- */
 /* INDEX
 ----------------------------------------------------------------------------------------
 01. Global Variables
@@ -1112,7 +1106,7 @@ header.premium-header .header-btn .btn-highlighted:hover {
 }
 
 .hero-info-content {
-  width: calc(100% - 161px);
+  width: calc(100%);
 }
 
 .hero-info-content h3 {
@@ -1416,25 +1410,6 @@ header.premium-header .header-btn .btn-highlighted:hover {
   overflow: hidden;
 }
 
-.about-us-item .icon-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: var(--primary-color);
-  width: 100%;
-  height: 100%;
-  transform: rotate(180deg) scale(0);
-  transition: all 0.4s ease-in-out;
-  z-index: 0;
-}
-
-.about-us-item:hover .icon-box::before {
-  border-radius: 0;
-  transform: rotate(0) scale(1);
-}
 
 .about-us-item .icon-box img {
   position: relative;
@@ -1442,10 +1417,6 @@ header.premium-header .header-btn .btn-highlighted:hover {
   max-width: 30px;
   transition: all 0.4s ease-in-out;
   z-index: 1;
-}
-
-.about-us-item:hover .icon-box img {
-  filter: brightness(0) invert(1);
 }
 
 .about-us-item-content {
@@ -7403,7 +7374,7 @@ header.premium-header .header-btn .btn-highlighted:hover {
   }
 
   .hero-info-content {
-    width: calc(100% - 101px);
+    width: calc(100%);
   }
 
   .hero-info-video {
@@ -8007,7 +7978,7 @@ header.premium-header .header-btn .btn-highlighted:hover {
   }
 
   .contact-us-image img {
-    aspect-ratio: 1 / 1.1;
+    object-fit: contain;
   }
 
   .working-hour-box {
