@@ -1410,7 +1410,6 @@ header.premium-header .header-btn .btn-highlighted:hover {
   overflow: hidden;
 }
 
-
 .about-us-item .icon-box img {
   position: relative;
   width: 100%;
@@ -3147,16 +3146,58 @@ header.premium-header .header-btn .btn-highlighted:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 20px 150px;
+  gap: 20px 40px;
+}
+
+.footer-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 22px;
 }
 
 .footer-logo img {
   width: 250%;
-  max-width: 180px;
+  max-width: 170px;
+  display: block;
+  transition:
+    transform 0.3s ease-in-out,
+    filter 0.3s ease-in-out;
+}
+
+.footer-logo-divider {
+  width: 1px;
+  height: 52px;
+  background: var(--dark-divider-color);
+  opacity: 0.7;
+}
+
+.footer-made-in-india {
+  display: flex;
+  align-items: center;
+}
+
+.footer-made-in-india img {
+  margin-left: 70px;
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.45));
+  transition:
+    transform 0.3s ease-in-out,
+    filter 0.3s ease-in-out;
+}
+
+.footer-made-in-india:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 4px rgba(251, 232, 126, 0.5));
+}
+.footer-logo:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 4px rgba(251, 232, 126, 0.5));
 }
 
 .footer-newsletter-form {
-  width: calc(100% - 290px);
+  width: calc(100% - 500px);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -6893,11 +6934,28 @@ header.premium-header .header-btn .btn-highlighted:hover {
   }
 
   .about-footer {
-    gap: 20px 30px;
+    gap: 25px 30px;
+  }
+
+  .footer-logo-group {
+    gap: 18px;
+  }
+
+  .footer-logo img {
+    max-width: 150px;
+  }
+
+  .footer-logo-divider {
+    height: 46px;
+  }
+
+  .footer-made-in-india img {
+    margin-left: 50px;
+    height: 100px;
   }
 
   .footer-newsletter-form {
-    width: calc(100% - 170px);
+    width: 100%;
   }
 
   .footer-newsletter-form h3 {
